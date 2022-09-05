@@ -7,7 +7,7 @@ import { writable } from "svelte/store";
     2: Webdesign
     3: Interface und Interaktionsdesign
     4: Englisch
-    5:
+    5: Mathe
     6:
     7:
 */
@@ -43,6 +43,10 @@ export let selectables = writable([
     {id: 21, groupID: 4, slotID: 14, fach:"V/Ü: English"},
     {id: 22, groupID: 4, slotID: 21, fach:"V/Ü: English"},
     {id: 23, groupID: 4, slotID: 22, fach:"V/Ü: English"},
+    //Mathe groupID: 5
+    {id: 24, groupID: 5, slotID: 19, fach:"Ü: Mathe"},
+    {id: 25, groupID: 5, slotID: 26, fach:"Ü: Mathe"},
+    {id: 26, groupID: 5, slotID: 27, fach:"Ü: Mathe"},
 ]);
 
 

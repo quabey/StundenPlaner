@@ -38,7 +38,7 @@ function select(id, fachText){
 <form>
 <div class="flex">
 {#each selectable as item}
-    {#if item.groupID == currentGroupID && item.groupID <= 3}
+    {#if item.groupID == currentGroupID && item.groupID <= 4}
         <div class="">
             <button class="
             bg-gray-600
@@ -54,9 +54,7 @@ function select(id, fachText){
             on:click={() => select(item.slotID, item.fach)}> {item.fach} am {slots[item.slotID].time} </button>
             </div>
             {/if}
-            {:else}
-                <h1>Fertig :</h1>
-        {/each}
+            {/each}
     </div>
 
 </form>
