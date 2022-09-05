@@ -5,5 +5,5 @@
 :root{
     @apply bg-sky-100;
     font-family: 'Roboto', sans-serif;
-    @apply scroll-auto;
+    @apply scroll-smooth;
 }

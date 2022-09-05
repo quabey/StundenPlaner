@@ -11,11 +11,11 @@
 
     onDestroy(unsubscribe);
 </script>
-<h1 class="text-3xl font-bold text-center p-6">Deine ausgesuchten Fächer</h1>
+<h1 class="text-3xl font-bold text-center py-3 my-3 mx-60 rounded-xl bg-sky-300 hover:bg-sky-400" >Deine Stunden </h1>
 <div class="grid grid-cols-6">
   {#each slots as item}
   <!-- Fach Display -->
-  <div class={"bg-sky-200 rounded-xl hover:bg-gray-200 hover:scale-110 m-2 p-2 "} >
+  <div class={"bg-sky-200 rounded-xl hover:bg-sky-300 hover:scale-110 m-2 p-2 "} >
         <p class="font-bold">
           { #if item.fach != ""}
             {item.fach}

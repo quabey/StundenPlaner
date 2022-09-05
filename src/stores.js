@@ -3,7 +3,7 @@ import { writable } from "svelte/store";
 /*
     groupID List
     0: Strukturietre Programm Labor
-    1.
+    1. CABS
     2:
     3:
     4:
@@ -20,12 +20,12 @@ export let selectables = writable([
     {id: 2, groupID: 0, slotID: 5, fach:"Labor: Strukturietre Programm."},
     {id: 3, groupID: 0, slotID: 6, fach:"Labor: Strukturietre Programm."},
     {id: 4, groupID: 0, slotID: 7, fach:"Labor: Strukturietre Programm."},
-    // Computerarchitektur und Betriebssysteme groupID: 1
-    {id: 5, groupID: 1, slotID: 2, fach:"Labor: Computerarchitektur und Betriebssysteme."},
-    {id: 6, groupID: 1, slotID: 3, fach:"Labor: Computerarchitektur und Betriebssysteme."},
-    {id: 7, groupID: 1, slotID: 20, fach:"Labor: Computerarchitektur und Betriebssysteme."},
-    {id: 8, groupID: 1, slotID: 6, fach:"Labor: Computerarchitektur und Betriebssysteme."},
-    {id: 9, groupID: 1, slotID: 7, fach:"Labor: Computerarchitektur und Betriebssysteme."},
+    // CABS groupID: 1
+    {id: 5, groupID: 1, slotID: 2, fach:"Labor: CABS."},
+    {id: 6, groupID: 1, slotID: 3, fach:"Labor: CABS."},
+    {id: 7, groupID: 1, slotID: 20, fach:"Labor: CABS."},
+    {id: 8, groupID: 1, slotID: 6, fach:"Labor: CABS."},
+    {id: 9, groupID: 1, slotID: 7, fach:"Labor: CABS."},
     //Webdisign groupID: 2
     {id: 10, groupID: 2, slotID: 12, fach:"Webdesign"},
     {id: 11, groupID: 2, slotID: 13, fach:"Webdesign"},
@@ -62,8 +62,8 @@ export let slot = writable([
     {id: 12, fach: "", time:"Mi, 08:15-09:45 Uhr" },
     {id: 13, fach: "", time:"Mi, 10.00-11:30 Uhr" },
     {id: 14, fach: "", time:"Mi, 12:15-13:45 Uhr" },
-    {id: 15, fach: "Volesung: Mathematik", time:"Mi, 14:00-15:30 Uhr" },
-    {id: 16, fach: "Vorlesung: Computerarchitektur und Betriebssysteme", time:"Mi, 14:00-15:30 Uhr" },
+    {id: 15, fach: "Vorlesung: Mathematik", time:"Mi, 14:00-15:30 Uhr" },
+    {id: 16, fach: "Vorlesung: CABS", time:"Mi, 14:00-15:30 Uhr" },
     {id: 17, fach: "", time:"Mi, 15:45-17:15 Uhr" },
     //Donnerstag
     {id: 18, fach: "", time:"Do, 08:15-09:45 Uhr" },
