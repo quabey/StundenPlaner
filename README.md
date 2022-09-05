@@ -2,7 +2,7 @@
 
 Dieser Stundenplanner dient der Orientierung beim Zusammenstellen von Vorlesungen und Laboren etc.!
 
-Probiert die Seite aus auf [GitHub Pages](quabey.github.io/StundenPlaner)
+Probiert die Seite aus auf [GitHub Pages](https://quabey.github.io/StundenPlaner/)
 
 Diese Web-App wurde mit GitHub Copilot erstellt!
 
