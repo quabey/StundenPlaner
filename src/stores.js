@@ -38,6 +38,7 @@ export let selectables = writable([
     {id: 17, groupID: 3, slotID: 9, fach:"Interface und Interaktionsdesign"},
     {id: 18, groupID: 3, slotID: 10, fach:"Interface und Interaktionsdesign"},
     {id: 19, groupID: 3, slotID: 11, fach:"Interface und Interaktionsdesign"},
+    {id: 20, groupID: 3, slotID: 7, fach:"Interface und Interaktionsdesign"},
 
 ]);
 
