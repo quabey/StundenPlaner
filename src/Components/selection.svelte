@@ -34,7 +34,7 @@ function select(id, fachText){
 }
 
 </script>
-<h1 class="text-3xl font-bold text-center px-10"> Wähle hier deine Fächer</h1>
+<h1 class="text-3xl font-bold text-center py-3 my-3 mx-60 rounded-xl bg-sky-300 hover:bg-sky-400"> <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"> Wähle hier deine Stunden </a></h1>
 <form>
 <div class="flex">
 {#each selectable as item}

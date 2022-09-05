@@ -3,10 +3,10 @@ import { writable } from "svelte/store";
 /*
     groupID List
     0: Strukturietre Programm Labor
-    1.
-    2:
-    3:
-    4:
+    1. CABS
+    2: Webdesign
+    3: Interface und Interaktionsdesign
+    4: Englisch
     5:
     6:
     7:
@@ -20,26 +20,29 @@ export let selectables = writable([
     {id: 2, groupID: 0, slotID: 5, fach:"Labor: Strukturietre Programm."},
     {id: 3, groupID: 0, slotID: 6, fach:"Labor: Strukturietre Programm."},
     {id: 4, groupID: 0, slotID: 7, fach:"Labor: Strukturietre Programm."},
-    // Computerarchitektur und Betriebssysteme groupID: 1
-    {id: 5, groupID: 1, slotID: 2, fach:"Labor: Computerarchitektur und Betriebssysteme."},
-    {id: 6, groupID: 1, slotID: 3, fach:"Labor: Computerarchitektur und Betriebssysteme."},
-    {id: 7, groupID: 1, slotID: 20, fach:"Labor: Computerarchitektur und Betriebssysteme."},
-    {id: 8, groupID: 1, slotID: 6, fach:"Labor: Computerarchitektur und Betriebssysteme."},
-    {id: 9, groupID: 1, slotID: 7, fach:"Labor: Computerarchitektur und Betriebssysteme."},
+    // CABS groupID: 1
+    {id: 5, groupID: 1, slotID: 2, fach:"Labor: CABS."},
+    {id: 6, groupID: 1, slotID: 3, fach:"Labor: CABS."},
+    {id: 7, groupID: 1, slotID: 20, fach:"Labor: CABS."},
+    {id: 8, groupID: 1, slotID: 6, fach:"Labor: CABS."},
+    {id: 9, groupID: 1, slotID: 7, fach:"Labor: CABS."},
     //Webdisign groupID: 2
-    {id: 10, groupID: 2, slotID: 12, fach:"Webdesign"},
-    {id: 11, groupID: 2, slotID: 13, fach:"Webdesign"},
-    {id: 12, groupID: 2, slotID: 24, fach:"Webdesign"},
-    {id: 13, groupID: 2, slotID: 25, fach:"Webdesign"},
-    {id: 14, groupID: 2, slotID: 26, fach:"Webdesign"},
-    {id: 15, groupID: 2, slotID: 27, fach:"Webdesign"},
+    {id: 10, groupID: 2, slotID: 12, fach:"Labor: Webdesign"},
+    {id: 11, groupID: 2, slotID: 13, fach:"Labor: Webdesign"},
+    {id: 12, groupID: 2, slotID: 25, fach:"Labor: Webdesign"},
+    {id: 13, groupID: 2, slotID: 26, fach:"Labor: Webdesign"},
+    {id: 14, groupID: 2, slotID: 27, fach:"Labor: Webdesign"},
     // Interface und Interaktionsdesign groupID: 3
-    {id: 16, groupID: 3, slotID: 8, fach:"Interface und Interaktionsdesign"},
-    {id: 17, groupID: 3, slotID: 9, fach:"Interface und Interaktionsdesign"},
-    {id: 18, groupID: 3, slotID: 10, fach:"Interface und Interaktionsdesign"},
-    {id: 19, groupID: 3, slotID: 11, fach:"Interface und Interaktionsdesign"},
-    {id: 20, groupID: 3, slotID: 7, fach:"Interface und Interaktionsdesign"},
-
+    {id: 15, groupID: 3, slotID: 8, fach:"Labor: Interface und Interaktionsdesign"},
+    {id: 16, groupID: 3, slotID: 9, fach:"Labor: Interface und Interaktionsdesign"},
+    {id: 17, groupID: 3, slotID: 10, fach:"Labor: Interface und Interaktionsdesign"},
+    {id: 18, groupID: 3, slotID: 11, fach:"Labor: Interface und Interaktionsdesign"},
+    {id: 19, groupID: 3, slotID: 7, fach:"Labor: Interface und Interaktionsdesign"},
+    //English groupID: 4
+    {id: 20, groupID: 4, slotID: 12, fach:"V/Ü: English"},
+    {id: 21, groupID: 4, slotID: 14, fach:"V/Ü: English"},
+    {id: 22, groupID: 4, slotID: 21, fach:"V/Ü: English"},
+    {id: 23, groupID: 4, slotID: 22, fach:"V/Ü: English"},
 ]);
 
 
@@ -62,8 +65,8 @@ export let slot = writable([
     {id: 12, fach: "", time:"Mi, 08:15-09:45 Uhr" },
     {id: 13, fach: "", time:"Mi, 10.00-11:30 Uhr" },
     {id: 14, fach: "", time:"Mi, 12:15-13:45 Uhr" },
-    {id: 15, fach: "Volesung: Mathematik", time:"Mi, 14:00-15:30 Uhr" },
-    {id: 16, fach: "Vorlesung: Computerarchitektur und Betriebssysteme", time:"Mi, 14:00-15:30 Uhr" },
+    {id: 15, fach: "Vorlesung: Mathematik", time:"Mi, 14:00-15:30 Uhr" },
+    {id: 16, fach: "Vorlesung: CABS", time:"Mi, 14:00-15:30 Uhr" },
     {id: 17, fach: "", time:"Mi, 15:45-17:15 Uhr" },
     //Donnerstag
     {id: 18, fach: "", time:"Do, 08:15-09:45 Uhr" },
