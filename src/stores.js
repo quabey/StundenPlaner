@@ -21,9 +21,9 @@ export let selectables = writable([
     // CABS groupID: 1
     {id: 5, groupID: 1, slotID: 2, fach:"Labor: CABS."},
     {id: 6, groupID: 1, slotID: 3, fach:"Labor: CABS."},
-    {id: 7, groupID: 1, slotID: 20, fach:"Labor: CABS."},
-    {id: 8, groupID: 1, slotID: 6, fach:"Labor: CABS."},
-    {id: 9, groupID: 1, slotID: 7, fach:"Labor: CABS."},
+    {id: 7, groupID: 1, slotID: 6, fach:"Labor: CABS."},
+    {id: 8, groupID: 1, slotID: 7, fach:"Labor: CABS."},
+    {id: 9, groupID: 1, slotID: 20, fach:"Labor: CABS."},
     //Webdisign groupID: 2
     {id: 10, groupID: 2, slotID: 12, fach:"Labor: Webdesign"},
     {id: 11, groupID: 2, slotID: 13, fach:"Labor: Webdesign"},
@@ -31,11 +31,11 @@ export let selectables = writable([
     {id: 13, groupID: 2, slotID: 26, fach:"Labor: Webdesign"},
     {id: 14, groupID: 2, slotID: 27, fach:"Labor: Webdesign"},
     // Interface und Interaktionsdesign groupID: 3
-    {id: 15, groupID: 3, slotID: 8, fach:"Labor: Interface und Interaktionsdesign"},
-    {id: 16, groupID: 3, slotID: 9, fach:"Labor: Interface und Interaktionsdesign"},
-    {id: 17, groupID: 3, slotID: 10, fach:"Labor: Interface und Interaktionsdesign"},
-    {id: 18, groupID: 3, slotID: 11, fach:"Labor: Interface und Interaktionsdesign"},
-    {id: 19, groupID: 3, slotID: 7, fach:"Labor: Interface und Interaktionsdesign"},
+    {id: 15, groupID: 3, slotID: 7, fach:"Labor: Interface und Interaktionsdesign"},
+    {id: 16, groupID: 3, slotID: 8, fach:"Labor: Interface und Interaktionsdesign"},
+    {id: 17, groupID: 3, slotID: 9, fach:"Labor: Interface und Interaktionsdesign"},
+    {id: 18, groupID: 3, slotID: 10, fach:"Labor: Interface und Interaktionsdesign"},
+    {id: 19, groupID: 3, slotID: 11, fach:"Labor: Interface und Interaktionsdesign"},
     //English groupID: 4
     {id: 20, groupID: 4, slotID: 12, fach:"V/Ü: English"},
     {id: 21, groupID: 4, slotID: 14, fach:"V/Ü: English"},
