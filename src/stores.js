@@ -2,7 +2,7 @@ import { writable } from "svelte/store";
 
 /*
     groupID List
-    0: Strukturietre Programm Labor
+    0: Strukturierte Programm Labor
     1. CABS
     2: Webdesign
     3: Interface und Interaktionsdesign
@@ -12,12 +12,12 @@ import { writable } from "svelte/store";
 
 export let selectables = writable([
 
-    // Strukturietre Programm Labor groupID: 0 
-    {id: 0, groupID: 0, slotID: 2, fach:"Labor: Strukturietre Programm."},
-    {id: 1, groupID: 0, slotID: 3, fach:"Labor: Strukturietre Programm."},
-    {id: 2, groupID: 0, slotID: 5, fach:"Labor: Strukturietre Programm."},
-    {id: 3, groupID: 0, slotID: 6, fach:"Labor: Strukturietre Programm."},
-    {id: 4, groupID: 0, slotID: 7, fach:"Labor: Strukturietre Programm."},
+    // Strukturierte Programm Labor groupID: 0 
+    {id: 0, groupID: 0, slotID: 2, fach:"Labor: Strukturierte Programm."},
+    {id: 1, groupID: 0, slotID: 3, fach:"Labor: Strukturierte Programm."},
+    {id: 2, groupID: 0, slotID: 5, fach:"Labor: Strukturierte Programm."},
+    {id: 3, groupID: 0, slotID: 6, fach:"Labor: Strukturierte Programm."},
+    {id: 4, groupID: 0, slotID: 7, fach:"Labor: Strukturierte Programm."},
     // CABS groupID: 1
     {id: 5, groupID: 1, slotID: 2, fach:"Labor: CABS."},
     {id: 6, groupID: 1, slotID: 3, fach:"Labor: CABS."},
@@ -50,7 +50,7 @@ export let selectables = writable([
 
 export let slot = writable([
     //Montag
-    {id: 0, fach: "Vorlesung: Strukturietre Programmierung", time:"Mo, 08:15-09:45 Uhr" },
+    {id: 0, fach: "Vorlesung: Strukturierte Programmierung", time:"Mo, 08:15-09:45 Uhr" },
     {id: 1, fach: "Vorlesung: Interface- und Interaktionsdesign", time:"Mo, 10.00-11:30 Uhr" },
     {id: 2, fach: "", time:"Mo, 12:15-13:45 Uhr" },
     {id: 3, fach: "", time:"Mo, 14:00-15:30 Uhr" },
