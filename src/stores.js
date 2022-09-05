@@ -8,8 +8,6 @@ import { writable } from "svelte/store";
     3: Interface und Interaktionsdesign
     4: Englisch
     5: Mathe
-    6:
-    7:
 */
 
 export let selectables = writable([
@@ -56,36 +54,36 @@ export let slot = writable([
     {id: 1, fach: "Vorlesung: Interface- und Interaktionsdesign", time:"Mo, 10.00-11:30 Uhr" },
     {id: 2, fach: "", time:"Mo, 12:15-13:45 Uhr" },
     {id: 3, fach: "", time:"Mo, 14:00-15:30 Uhr" },
-    {id: 4, fach: "", time:"Mo, 14:00-15:30 Uhr" },
-    {id: 5, fach: "", time:"Mo, 15:45-17:15 Uhr" },
+    {id: 4, fach: "", time:"Mo, 15:45-17:15 Uhr" },
+    {id: 5, fach: "", time:"Mo, 17:30-19:00 Uhr" },
     //Dienstag
     {id: 6, fach: "", time:"Di, 08:15-09:45 Uhr" },
     {id: 7, fach: "", time:"Di, 10.00-11:30 Uhr" },
     {id: 8, fach: "", time:"Di, 12:15-13:45 Uhr" },
     {id: 9, fach: "", time:"Di, 14:00-15:30 Uhr" },
-    {id: 10, fach: "", time:"Di, 14:00-15:30 Uhr" },
-    {id: 11, fach: "", time:"Di, 15:45-17:15 Uhr" },
+    {id: 10, fach: "", time:"Di, 15:45-17:15 Uhr" },
+    {id: 11, fach: "", time:"Di, 17:30-19:00 Uhr" },
     //Mitwoch
     {id: 12, fach: "", time:"Mi, 08:15-09:45 Uhr" },
     {id: 13, fach: "", time:"Mi, 10.00-11:30 Uhr" },
     {id: 14, fach: "", time:"Mi, 12:15-13:45 Uhr" },
     {id: 15, fach: "Vorlesung: Mathematik", time:"Mi, 14:00-15:30 Uhr" },
-    {id: 16, fach: "Vorlesung: CABS", time:"Mi, 14:00-15:30 Uhr" },
-    {id: 17, fach: "", time:"Mi, 15:45-17:15 Uhr" },
+    {id: 16, fach: "Vorlesung: CABS", time:"Mi, 15:45-17:15  Uhr" },
+    {id: 17, fach: "", time:"Mi, 17:30-19:00 Uhr" },
     //Donnerstag
     {id: 18, fach: "", time:"Do, 08:15-09:45 Uhr" },
     {id: 19, fach: "", time:"Do, 10.00-11:30 Uhr" },
     {id: 20, fach: "", time:"Do, 12:15-13:45 Uhr" },
     {id: 21, fach: "", time:"Do, 14:00-15:30 Uhr" },
-    {id: 22, fach: "", time:"Do, 14:00-15:30 Uhr" },
-    {id: 23, fach: "", time:"Do, 15:45-17:15 Uhr" },
+    {id: 22, fach: "", time:"Do, 15:45-17:15 Uhr" },
+    {id: 23, fach: "", time:"Do, 17:30-19:00 Uhr" },
     //Freitag
     {id: 24, fach: "Vorlesung: Webdesign", time:"Fr, 08:15-09:45 Uhr" },
     {id: 25, fach: "", time:"Fr, 10.00-11:30 Uhr" },
     {id: 26, fach: "", time:"Fr, 12:15-13:45 Uhr" },
     {id: 27, fach: "", time:"Fr, 14:00-15:30 Uhr" },
-    {id: 28, fach: "", time:"Fr, 14:00-15:30 Uhr" },
-    {id: 29, fach: "", time:"Fr, 15:45-17:15 Uhr" },
+    {id: 28, fach: "", time:"Fr, 15:45-17:15 Uhr" },
+    {id: 29, fach: "", time:"Fr, 17:30-19:00 Uhr" },
 
 ]);
 

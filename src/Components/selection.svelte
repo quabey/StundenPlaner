@@ -38,7 +38,7 @@ function select(id, fachText){
 <form>
 <div class="flex">
 {#each selectable as item}
-    {#if item.groupID == currentGroupID && item.groupID <= 4}
+    {#if item.groupID == currentGroupID && item.groupID <= 5}
         <div class="">
             <button class="
             bg-gray-600
