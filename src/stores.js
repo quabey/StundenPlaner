@@ -4,9 +4,9 @@ import { writable } from "svelte/store";
     groupID List
     0: Strukturietre Programm Labor
     1. CABS
-    2:
-    3:
-    4:
+    2: Webdesign
+    3: Interface und Interaktionsdesign
+    4: Englisch
     5:
     6:
     7:
@@ -27,19 +27,22 @@ export let selectables = writable([
     {id: 8, groupID: 1, slotID: 6, fach:"Labor: CABS."},
     {id: 9, groupID: 1, slotID: 7, fach:"Labor: CABS."},
     //Webdisign groupID: 2
-    {id: 10, groupID: 2, slotID: 12, fach:"Webdesign"},
-    {id: 11, groupID: 2, slotID: 13, fach:"Webdesign"},
-    {id: 12, groupID: 2, slotID: 24, fach:"Webdesign"},
-    {id: 13, groupID: 2, slotID: 25, fach:"Webdesign"},
-    {id: 14, groupID: 2, slotID: 26, fach:"Webdesign"},
-    {id: 15, groupID: 2, slotID: 27, fach:"Webdesign"},
+    {id: 10, groupID: 2, slotID: 12, fach:"Labor: Webdesign"},
+    {id: 11, groupID: 2, slotID: 13, fach:"Labor: Webdesign"},
+    {id: 12, groupID: 2, slotID: 25, fach:"Labor: Webdesign"},
+    {id: 13, groupID: 2, slotID: 26, fach:"Labor: Webdesign"},
+    {id: 14, groupID: 2, slotID: 27, fach:"Labor: Webdesign"},
     // Interface und Interaktionsdesign groupID: 3
-    {id: 16, groupID: 3, slotID: 8, fach:"Interface und Interaktionsdesign"},
-    {id: 17, groupID: 3, slotID: 9, fach:"Interface und Interaktionsdesign"},
-    {id: 18, groupID: 3, slotID: 10, fach:"Interface und Interaktionsdesign"},
-    {id: 19, groupID: 3, slotID: 11, fach:"Interface und Interaktionsdesign"},
-    {id: 20, groupID: 3, slotID: 7, fach:"Interface und Interaktionsdesign"},
-
+    {id: 15, groupID: 3, slotID: 8, fach:"Labor: Interface und Interaktionsdesign"},
+    {id: 16, groupID: 3, slotID: 9, fach:"Labor: Interface und Interaktionsdesign"},
+    {id: 17, groupID: 3, slotID: 10, fach:"Labor: Interface und Interaktionsdesign"},
+    {id: 18, groupID: 3, slotID: 11, fach:"Labor: Interface und Interaktionsdesign"},
+    {id: 19, groupID: 3, slotID: 7, fach:"Labor: Interface und Interaktionsdesign"},
+    //English groupID: 4
+    {id: 20, groupID: 4, slotID: 12, fach:"V/Ü: English"},
+    {id: 21, groupID: 4, slotID: 14, fach:"V/Ü: English"},
+    {id: 22, groupID: 4, slotID: 21, fach:"V/Ü: English"},
+    {id: 23, groupID: 4, slotID: 22, fach:"V/Ü: English"},
 ]);
 
 
