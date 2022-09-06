@@ -1,21 +1,26 @@
 <script>
-    import { slot } from "../stores.js";
+    import { slot, currentHoverID } from "../stores.js";
     import { onDestroy } from "svelte";
+    import DayDisplay from "./dayDisplay.svelte";
+    
 
     let slots;
-    let filled = false[29];
+    let currentHoverIDs;
+    let hovered = false;
 
     let unsubscribe = slot.subscribe(value => {
   slots = value;
     });
 
-    onDestroy(unsubscribe);
 </script>
-<h1 class="text-3xl font-bold text-center py-3 my-3 mx-60 rounded-xl bg-sky-300 hover:bg-sky-400" >Deine Stunden </h1>
-<div class="grid grid-cols-6 mb-6 mx-2">
-  {#each slots as item}
+<h1 class="text-3xl font-bold text-center py-3 my-3 mx-60 rounded-xl bg-sky-300 hover:bg-sky-400"> Deine Stunden </h1>
+
+<DayDisplay />
+
+<div class="grid-style mx-6 mt-2 mb-5 gap-2">
+  {#each slots as item, i} 
   <!-- Fach Display -->
-  <div class={"bg-sky-200 rounded-xl hover:bg-sky-300 hover:scale-110 m-2 p-2 "} >
+<div class="bg-sky-200 hover:bg-sky-300 hover:scale-105  p-2 text-center w-full transition ease-in-out delay-150 " class:font-red="{$currentHoverID === i}" >
         <p class="font-bold">
           { #if item.fach != ""}
             {item.fach}
@@ -31,3 +36,13 @@
   {/each}
 </div>
 
+<style>
+  .grid-style{
+    grid-auto-columns: minmax(0, 1fr);
+    grid-auto-flow: column;
+    grid-row: 6;
+    display: grid;
+    @apply grid-rows-6;
+    @apply grid-flow-col;
+    }
+</style>

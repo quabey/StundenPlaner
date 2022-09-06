@@ -1,20 +1,7 @@
 <script>
-    import { selectables, slot, errorMsg } from "../stores.js";
+    import { selectables, slot, } from "../stores.js";
     import { createEventDispatcher } from "svelte";
 
-    let errorMsgs;
-
-    let unsubscribe = errorMsg.subscribe(value => {
-        errorMsgs = value;
-    });
-
-    function handleclick(){
-        errorMsg.update(value => {
-            value = false;
-            return value;
-        });
-        console.log("ClickHandled");
-    }
 
 </script>
 <div class="fixed z-10 inset-0 overflow-y-auto" aria-labelledby="modal-title" role="dialog" aria-modal="true">

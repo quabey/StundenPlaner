@@ -1,12 +1,16 @@
 <script>
-    import { selectables, slot, errorMsg } from "../stores.js";
+    import { selectables, slot, currentHoverID} from "../stores.js";
     import Popup from "./popup.svelte";
 
     let selectable;
     let slots;
     let currentGroupID = 0;
-    let errorMsgs;
     let errorMsgTest = false;
+    let currentHoverIDs;
+
+let unsubscribeHover = currentHoverID.subscribe(value => {
+    currentHoverIDs = value;
+});
 
 let unsubscribe = selectables.subscribe(value => {
     selectable = value;
@@ -16,13 +20,17 @@ let unsubscribeSlot = slot.subscribe(value => {
     slots = value;
 });
 
-let unsubscribeErrorMsg = errorMsg.subscribe(value => {
-    errorMsgs = value;
-});
-
 function handleClick() {
     errorMsgTest = !errorMsgTest;
+}
 
+function handleMouseover(id) {
+    currentHoverIDs = id
+    console.log(currentHoverIDs);;
+}
+
+function handleMouseOut() {
+    currentHoverIDs = 999;
 }
 
 
@@ -51,13 +59,15 @@ function select(id, fachText){
 {/if}
 
 <h1 class="text-3xl font-bold text-center py-3 my-3 mx-60 rounded-xl bg-sky-300 hover:bg-sky-400"> <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"> Wähle hier deine Stunden </a></h1>
-<div class="flex center">
+<div class="flex place-content-center">
 {#each selectable as item}
     {#if item.groupID == currentGroupID && item.groupID <= 5}
-        <div class="">
-            <button class=" bg-gray-600 hover:bg-gray-700 rounded-3xl p-3 m-2 text-white flex item-center hover:scale-110" 
-            on:click={() => select(item.slotID, item.fach)}> {item.fach} am {slots[item.slotID].time} </button>
-            </div>
-            {/if}
-            {/each}
-    </div>
+        <!-- svelte-ignore a11y-mouse-events-have-key-events -->
+        <div class="" on:mouseover={() => handleMouseover(item.slotID)} on:mouseout={handleMouseOut}>
+            <button class=" bg-gray-600 hover:bg-gray-700 rounded-3xl p-3 m-2 text-white flex item-center hover:scale-110 transition ease-in-out delay-150" 
+            on:click={() => select(item.slotID, item.fach)}> 
+                {item.fach} am {slots[item.slotID].time} </button>
+        </div>
+    {/if}
+{/each}
+</div>

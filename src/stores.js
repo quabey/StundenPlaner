@@ -10,7 +10,7 @@ import { writable } from "svelte/store";
     5: Mathe
 */
 
-export let errorMsg = writable(false);
+export let currentHoverID = writable(7);
 
 export let selectables = writable([
 
