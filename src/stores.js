@@ -10,6 +10,8 @@ import { writable } from "svelte/store";
     5: Mathe
 */
 
+export let errorMsg = writable(false);
+
 export let selectables = writable([
 
     // Strukturierte Programm Labor groupID: 0 
