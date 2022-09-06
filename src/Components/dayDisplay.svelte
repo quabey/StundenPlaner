@@ -16,18 +16,6 @@
     </div>
 </div>
 
-<style>
-    .grid-bar{
-        grid-auto-columns: minmax(0, 1fr);
-    grid-auto-flow: column;
-    grid-row: 1;
-    display: grid;
-    @apply grid-rows-1;
-    @apply grid-flow-col;
-    }
-
-</style>
-
 
 
 

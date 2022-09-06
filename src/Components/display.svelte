@@ -35,14 +35,3 @@
   </div>
   {/each}
 </div>
-
-<style>
-  .grid-style{
-    grid-auto-columns: minmax(0, 1fr);
-    grid-auto-flow: column;
-    grid-row: 6;
-    display: grid;
-    @apply grid-rows-6;
-    @apply grid-flow-col;
-    }
-</style>
