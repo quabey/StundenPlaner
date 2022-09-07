@@ -54,6 +54,8 @@ function select(id, fachText){
 }
 </script>
 
+<div class="justify-none mb-0">
+
 {#if errorMsgTest}
     <Popup on:click={handleClick}/>
 {/if}
@@ -70,4 +72,5 @@ function select(id, fachText){
         </div>
     {/if}
 {/each}
+</div>
 </div>
