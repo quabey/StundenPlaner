@@ -8,8 +8,12 @@
 </script>
 
 	
-<div class="justify-between flex flex-col h-screen">
-<Selection />
-<Display />
-<Footer />
+<div class="h-screen">
+  <Selection />
+  <div class="justify-between flex flex-col h-full">
+    <Display />
+    <div class="mt-auto">
+      <Footer />
+    </div>
+  </div>
 </div>
