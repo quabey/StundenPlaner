@@ -12,6 +12,8 @@ Diese Web-App wurde mit GitHub Copilot erstellt!
 
 Die Web-App erkennt automatisch wenn eine Stunde bereits belegt ist, und gibt dir ggf. ein Error.
 
-### More coming soon 
+### Error Message
 
-> PS: Ich weiß nicht wie man die Tage vertikal darstellt. Ja, ich habe es probiert. Nein, ich habe es nicht geschafft. 
+Error Message sieht gut aus!
+
+### More coming soon 
