@@ -52,6 +52,9 @@ function select(id, fachText){
         errorMsgTest = true;
     }
 }
+$: if (currentGroupID > 5) {
+    document.getElementById("title").classList.add("hidden");
+}
 </script>
 
 <div class="justify-none mb-0">
@@ -59,7 +62,7 @@ function select(id, fachText){
 {#if errorMsgTest}
     <Popup on:click={handleClick}/>
 {/if}
-<div class="flex content-center justify-center">
+<div id="title" class="flex content-center justify-center">
     <h1 class="shadow-lg text-3xl font-bold text-center py-3 my-3 md:mx-60 rounded-xl w-5/6 bg-primary "> <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"> Wähle hier deine Stunden </a></h1>
 </div>
 <div class=" place-content-center grid grid-flow-row md:grid-rows-1 md:grid-flow-col ">
