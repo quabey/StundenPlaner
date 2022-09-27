@@ -59,14 +59,15 @@ function select(id, fachText){
 {#if errorMsgTest}
     <Popup on:click={handleClick}/>
 {/if}
-
-<h1 class="shadow-lg text-3xl font-bold text-center py-3 my-3 mx-60 rounded-xl bg-sky-300 hover:bg-sky-400"> <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"> Wähle hier deine Stunden </a></h1>
-<div class="flex place-content-center">
+<div class="flex content-center justify-center">
+    <h1 class="shadow-lg text-3xl font-bold text-center py-3 my-3 md:mx-60 rounded-xl w-5/6 bg-primary "> <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"> Wähle hier deine Stunden </a></h1>
+</div>
+<div class=" place-content-center grid grid-flow-row md:grid-rows-1 md:grid-flow-col ">
 {#each selectable as item}
     {#if item.groupID == currentGroupID && item.groupID <= 5}
         <!-- svelte-ignore a11y-mouse-events-have-key-events -->
         <div class="" on:mouseover={() => handleMouseover(item.slotID)} on:mouseout={handleMouseOut}>
-            <button class="shadow-lg bg-gray-600 hover:bg-gray-700 rounded-3xl p-3 m-2 text-white flex item-center hover:scale-110 transition ease-in-out delay-150" 
+            <button class="shadow-lg bg-secondary hover:bg-special hover:text-black rounded-3xl p-3 m-2 flex item-center hover:scale-110 transition ease-in-out delay-150" 
             on:click={() => select(item.slotID, item.fach)}> 
                 {item.fach} am {slots[item.slotID].time} </button>
         </div>
