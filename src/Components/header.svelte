@@ -1,6 +1,6 @@
 <body class="bg-gray-400  leading-normal tracking-normal">
 
-	<nav class="flex items-center justify-between flex-wrap bg-primary p-6 fixed w-full z-10 top-0">
+	<nav class="flex items-center justify-between flex-wrap bg-gray-700 p-6 fixed w-full z-10 top-0">
 		<div class="flex items-center flex-shrink-0 text-white mr-6">
 			<a class="text-white no-underline hover:text-special hover:no-underline" href="https://quabey.github.io/hs-freebies/">
 				<span class="text-2xl pl-2">Freebies</span>

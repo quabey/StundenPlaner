@@ -17,7 +17,7 @@
               Error
             </h3>
             <div class="mt-2">
-              <p class="text-sm text-gray-100">
+              <p class="text-sm ">
                 Stunde ist schon belegt. Bitte wähle eine andere Stunde.
               </p>
             </div>
@@ -25,7 +25,7 @@
         </div>
       </div>
       <div class=" px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse">
-        <button type="button" class="w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-primary text-base font-medium text-white hover:bg-special focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-sky-500 sm:ml-3 sm:w-auto sm:text-sm" on:click>
+        <button type="button" class="drop-shadow-lg w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-primary text-base font-medium  hover:bg-special focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-sky-500 sm:ml-3 sm:w-auto sm:text-sm" on:click>
           Ok
 
       </div>
